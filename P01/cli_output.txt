@@ -1,0 +1,77 @@
+Microsoft Windows [Version 10.0.19041.572]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Mingyu>ibmcloud login
+API 엔드포인트: https://cloud.ibm.com
+지역: us-south
+
+Email> 18681001@konyang.ac.kr
+
+Password>
+인증 중...
+확인
+
+대상 지정된 계정 Mingyu Kang's Account (5886f5c2d6974ebb8f764792ea1c60eb)
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                us-south
+사용자:              18681001@konyang.ac.kr
+계정:                Mingyu Kang's Account (5886f5c2d6974ebb8f764792ea1c60eb)
+리소스 그룹:         대상으로 지정된 리소스 그룹이 없습니다.'ibmcloud target -g RESOURCE_GROUP' 명령을 사용하십시오.
+CF API 엔드포인트:
+조직:
+영역:
+
+C:\Users\Mingyu>ibmcloud resources groups
+실패
+'resources'은(는) 등록된 명령이 아닙니다. 'ibmcloud help'를 참조하십시오.
+
+
+C:\Users\Mingyu>ibmcloud resource groups
+18681001@konyang.ac.kr(으)로 5886f5c2d6974ebb8f764792ea1c60eb 계정에서 모든 리소스 그룹 검색 중...
+확인
+이름        ID                                 기본 그룹   상태
+MyFirstRG   8c536cb7dee9408c9c82412cefef76de   true        ACTIVE
+
+
+
+C:\Users\Mingyu>ibmcloud target -g Default
+실패
+리소스 그룹을 가져올 수 없음:
+리소스 그룹 'Default'을(를) 찾을 수 없습니다. 'ibmcloud resource groups' 명령을 사용하여 사용 가능한 모든 리소스 그룹을 나열하십시오.
+
+
+C:\Users\Mingyu>ibmcloud target -g MyFirstRG
+대상 지정된 리소스 그룹 MyFirstRG
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                us-south
+사용자:              18681001@konyang.ac.kr
+계정:                Mingyu Kang's Account (5886f5c2d6974ebb8f764792ea1c60eb)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:
+조직:
+영역:
+
+C:\Users\Mingyu>ibmcloud target -o 18681001@konyang.ac.kr -s test
+대상 지정된 Cloud Foundry(https://api.us-south.cf.cloud.ibm.com)
+
+대상 지정된 조직 18681001@konyang.ac.kr
+
+대상 지정된 영역 Test
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                us-south
+사용자:              18681001@konyang.ac.kr
+계정:                Mingyu Kang's Account (5886f5c2d6974ebb8f764792ea1c60eb)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:   https://api.us-south.cf.cloud.ibm.com(API 버전: 2.153.0)
+조직:                18681001@konyang.ac.kr
+영역:                Test
+
+C:\Users\Mingyu>
